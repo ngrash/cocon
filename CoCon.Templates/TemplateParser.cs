@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Text;
 
-namespace CoCon.Templates.Parser
+namespace CoCon.Templates
 {
     /// <summary>
     /// The <c>TemplateParser</c> extracts <see cref="TemplateSegment"/>s from a template string.

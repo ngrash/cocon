@@ -1,4 +1,4 @@
-﻿namespace CoCon.Templates.Parser
+﻿namespace CoCon.Templates
 {
     /// <summary>
     /// Represents a segment of a template.

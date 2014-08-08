@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-using CoCon.Templates.Parser;
-
 namespace CoCon.Templates
 {
     public class Template

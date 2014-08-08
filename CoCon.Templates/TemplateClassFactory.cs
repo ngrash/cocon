@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-using CoCon.Templates.Parser;
-
 namespace CoCon.Templates
 {
     public class TemplateClassFactory

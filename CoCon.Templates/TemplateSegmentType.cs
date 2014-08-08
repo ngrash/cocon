@@ -1,4 +1,4 @@
-﻿namespace CoCon.Templates.Parser
+﻿namespace CoCon.Templates
 {
     /// <summary>
     /// Defines the type of a <see cref="TemplateSegment"/>.

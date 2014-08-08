@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-using CoCon.Templates.Parser;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CoCon.Templates.Tests

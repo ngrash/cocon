@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 
-using CoCon.Templates.Parser;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CoCon.Templates.Tests
