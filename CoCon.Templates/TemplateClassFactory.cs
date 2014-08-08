@@ -4,8 +4,17 @@ using System.Text;
 
 namespace CoCon.Templates
 {
+    /// <summary>
+    /// Generates a compile-ready template class.
+    /// </summary>
     public class TemplateClassFactory
     {
+        /// <summary>
+        /// Creates the template class.
+        /// </summary>
+        /// <param name="segments">The segments of which the template consists.</param>
+        /// <returns>A string containing a compile-ready template class.</returns>
+        /// <exception cref="System.ArgumentOutOfRangeException">A <see cref="TemplateSegment"/> with an unknown <see cref="TemplateSegmentType"/> was encountered.</exception>
         public string CreateTemplateClass(IReadOnlyList<TemplateSegment> segments)
         {
             var templateBuilder = new StringBuilder();
