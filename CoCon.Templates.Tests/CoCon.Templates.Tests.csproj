@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="TemplateBaseTests.cs" />
+    <Compile Include="TemplateClassFactoryTests.cs" />
     <Compile Include="TemplateParserTests.cs" />
     <Compile Include="TemplateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
