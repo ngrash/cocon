@@ -54,6 +54,7 @@
     <Compile Include="TemplateClassFactoryTests.cs" />
     <Compile Include="TemplateCompilerTests.cs" />
     <Compile Include="TemplateParserTests.cs" />
+    <Compile Include="TemplateProcesssorTests.cs" />
     <Compile Include="TemplateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

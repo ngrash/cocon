@@ -47,6 +47,7 @@
     <Compile Include="TemplateBase.cs" />
     <Compile Include="TemplateCompiler.cs" />
     <Compile Include="TemplateClassFactory.cs" />
+    <Compile Include="TemplateProcessor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
