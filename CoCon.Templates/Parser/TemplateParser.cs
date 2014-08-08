@@ -46,6 +46,12 @@ namespace CoCon.Templates.Parser
                         segmentContent.Append((char)ch);
                     }
                 }
+
+                // If there is never an opening or closing identifier, the content of the segment is considered plain text
+                if (segmentContent.Length != 0)
+                {
+                    segments.Add(new TemplateSegment(TemplateSegmentType.PlainText, segmentContent.ToString()));
+                }
             }
 
             return new ReadOnlyCollection<TemplateSegment>(segments);
