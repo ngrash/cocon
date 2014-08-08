@@ -58,5 +58,24 @@ bar ";
             Assert.AreEqual("foo", segments[0].Content);
             Assert.AreEqual(TemplateSegmentType.PlainText, segments[0].Type);
         }
+
+        [TestMethod]
+        public void ParsesMultiLineTextSegment()
+        {
+            const string Template =
+@"foo
+bar";
+
+            var parser = new TemplateParser();
+            ReadOnlyCollection<TemplateSegment> segments = parser.Parse(Template);
+
+            const string ExpectedSegmentContent =
+@"foo
+bar";
+
+            Assert.AreEqual(1, segments.Count);
+            Assert.AreEqual(ExpectedSegmentContent, segments[0].Content);
+            Assert.AreEqual(TemplateSegmentType.PlainText, segments[0].Type);
+        }
     }
 }
