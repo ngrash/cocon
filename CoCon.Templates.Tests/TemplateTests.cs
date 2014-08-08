@@ -17,13 +17,10 @@ namespace CoCon.Templates.Tests
         [TestMethod]
         public void CanProcessBasicConditionalTemplate()
         {
-            const string TemplateString = @"Hello <% if(false) { %>World<% } else { %>Universe<% } %>";
-            var template = new Template(TemplateString);
+            var template = new Template("Hello <% if(false) { %>World<% } else { %>Universe<% } %>");
             string result = template.Process();
 
-            const string ExpectedResult = @"Hello Universe";
-
-            Assert.AreEqual(ExpectedResult, result);
+            Assert.AreEqual("Hello Universe", result);
         }
     }
 }
