@@ -6,8 +6,17 @@ using System.Text;
 
 namespace CoCon.Templates.Parser
 {
+    /// <summary>
+    /// The <c>TemplateParser</c> extracts <see cref="TemplateSegment"/>s from a template string.
+    /// </summary>
     public class TemplateParser
     {
+        /// <summary>
+        /// Parses the specified template.
+        /// </summary>
+        /// <param name="template">The template.</param>
+        /// <returns>A <c>ReadOnlyCollection</c> containing the segments of the template.</returns>
+        /// <exception cref="System.ArgumentNullException">The <paramref name="template"/> parameter is null.</exception>
         public ReadOnlyCollection<TemplateSegment> Parse(string template)
         {
             if (template == null)
