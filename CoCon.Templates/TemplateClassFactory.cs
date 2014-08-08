@@ -20,7 +20,7 @@ namespace CoCon.Templates
                 switch (segment.Type)
                 {
                     case TemplateSegmentType.PlainText:
-                        string writeCall = string.Format("Write(\"{0}\")", segment.Content);
+                        string writeCall = string.Format("Write(\"{0}\");", segment.Content);
                         templateBuilder.Append(writeCall);
                         break;
                     case TemplateSegmentType.CodeBlock:
