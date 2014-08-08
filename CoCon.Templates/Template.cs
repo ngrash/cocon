@@ -44,6 +44,9 @@ namespace CoCon.Templates
                         string output = outputBuffer.ToString();
                         string outputCode = string.Format("Write(\"{0}\");", output);
                         codeBuffer.AppendLine(outputCode);
+
+                        // Clear output buffer
+                        outputBuffer.Clear();
                     }
                     else if (insideCodeBlock && ch == '%' && reader.Peek() == '>')
                     {
